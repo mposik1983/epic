@@ -13,4 +13,4 @@ export outDIR=/gpfs/mnt/gpfs02/eic/mposik/ePIC
 echo $DETECTOR
 
 echo ddsim --steeringFile steering.py --compactFile epic_tracking_only.xml -G -N 1000 --outputFile $outDIR/test.edm4hep.root
-ddsim --steeringFile steering.py --compactFile epic_tracking_only.xml -G -N 1000 --outputFile $outDIR/test.edm4hep.root
+ddsim --steeringFile $codeDIR/mySteer.py --compactFile epic_tracking_only.xml -G -N 1000 --outputFile $outDIR/test.edm4hep.root
