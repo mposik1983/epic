@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#export baseDIR=/eic/u/mposik/Detector1/EPIC
-#export codeDIR=${baseDIR}/epic
+export baseDIR=/eic/u/mposik/Detector1/EPIC
+export codeDIR=${baseDIR}/epic
 export outDIR=/gpfs/mnt/gpfs02/eic/mposik/ePIC
 #cd ${baseDIR}
 #pwd
