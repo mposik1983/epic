@@ -1,0 +1,17 @@
+Universe        = vanilla
+Notification    = Never
+Priority        = 1
+GetEnv          = True
+Initialdir      = /direct/eic+u/mposik/Detector1/EPIC/epic
+Executable      = $(Initialdir)/runnoembed.sh
+Myoutdir        = /gpfs02/eic/mposik/ePIC
+Output          = $(Myoutdir)/logfiles/Test.out
+Error           = $(Myoutdir)/logfiles/Test.err
+Log             = $(Myoutdir)/logfiles/Test.log
+
+PeriodicHold = (NumJobStarts>=1 && JobStatus == 1)
++SingularityImage="/cvmfs/singularity.opensciencegrid.org/eicweb/jug_xl:nightly"
+request_memory = 4.0GB
+
+Queue
+
